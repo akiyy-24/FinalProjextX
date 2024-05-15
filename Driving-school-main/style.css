@@ -365,6 +365,7 @@ nav a.active{
 .hero-text a.ctaa ion-icon{
     vertical-align: middle;
     margin: 5px;
+    text-decoration: none;
 }
 
 /* home page styling */
