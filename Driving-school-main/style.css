@@ -50,12 +50,14 @@ body{
     font-size: 25px;
     font-weight: 600;
     color: #202020;
+    text-align: center;
   }
   .card .top-text p{
     font-size: 20px;
     font-weight: 600;
     color: #e74c3c;
     line-height: 20px;
+    text-align: center;
   }
   .card .bottom-text{
     padding: 0 20px 10px 20px;
@@ -70,7 +72,7 @@ body{
     visibility: visible;
   }
   .card .bottom-text .text{
-    text-align: justify;
+    
   }
   .card .bottom-text .btn{
     margin: 10px 0;
@@ -110,8 +112,7 @@ section.hero{
 }
 section.hero1 .xyz{
   font-size: 30px;
-  margin:0 40px 0 0 
-;
+  margin:0 40px 0 0;
 }
 
 section.hero1 p{
@@ -143,6 +144,9 @@ section.hero4{
     flex-direction: column;
     align-items: start;
     gap: 20px;
+}
+.para{
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .contact-left-title h2{
     font-weight: 600;
@@ -304,13 +308,17 @@ nav a.active{
 
 .hero-text{
     top: 40%;
-    left: 10%;
+    left: 6%;
     position: absolute;
     text-align: left; 
 }
 
 .hero-text h1{
-   font-size: 3em;
+   font-size: 4em;
+   
+}
+.hero-text h1 span{
+  color: #e0c114;
 }
 
 .hero-text h4{
@@ -351,6 +359,7 @@ nav a.active{
     background: rgba(128, 128, 128, 0.329);
     border: 1px solid white;
     margin-left: 20px;
+    
 }
 
 .hero-text a.ctaa ion-icon{
@@ -413,6 +422,9 @@ section:nth-child(odd) {
   }
   .content:hover{
     color: white;
+  }
+  .content h2 span{
+    color: indigo;
   }
   .content:hover a{
     border-color: white;
