@@ -201,13 +201,15 @@
            <!-- contact Us -->
                <section class="hero4" id="contact">
                 <div class="contact-container">
-                <form action="" class="contact-left">
+                <form action="https://api.web3forms.com/submit" class="contact-left" method="POST">
                     <div class="contact-left-title">
                     <h2>Get in touch</h2>
-                    <hr>
+                    
                 </div>
+                <input type="hidden" name="access_key" value="4bf16baa-e9eb-4548-a535-a06aec95dc10">
                 <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
                 <input type="text" name="email" placeholder="Your email" class="contact-inputs" required>
+                <input type="text" name="contact" placeholder="Your Contact" class="contact-inputs" required>
                 <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
                 <button type="submit">Submit<ion-icon name="arrow-forward"></ion-icon></button>
                 </form>
