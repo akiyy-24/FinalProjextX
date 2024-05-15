@@ -168,3 +168,12 @@ form .buttons button , .backBtn{
         width: 100%;
     }
 }
+
+/* location css */
+
+.location{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
