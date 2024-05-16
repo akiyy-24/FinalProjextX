@@ -1,4 +1,4 @@
-<?php 
+<?php
 $fullname = $_POST['fullname'];
 $fname = $_POST['fname'];
 $lname = $_POST['lname'];
@@ -6,7 +6,7 @@ $bdate = $_POST['bdate'];
 $email = $_POST['email'];
 $mnumber = $_POST['mnumber'];
 $gender = $_POST['gender'];
-$occupation = $_POST['occupation'];
+$occupation = $_POST['Occupation']; // Corrected variable name
 $idtype = $_POST['idtype'];
 $idnumber = $_POST['idnumber'];
 $isdate = $_POST['isdate'];
@@ -31,11 +31,11 @@ if ($idtype == 'new') {
 }
 
 // Create MySQL connection
-$conn = new mysqli('localhost', 'root', '', 'test');
+$conn = new mysqli('localhost', 'root', '', 'driving school');
 if ($conn->connect_error) {
     die('Connection Failed: ' . $conn->connect_error);
 } else {
-    $stmt = $conn->prepare("INSERT INTO customer(Full_Name, First_Name, Last_Name, Birth_Date, Email, Mob_Number, Gender, Occupation, ID_Type, ID_Number, Issued_Date, Address, Nationality, District) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
+    $stmt = $conn->prepare("INSERT INTO customer(Full_Name, First_Name, Last_Name, Birth_Date, Email, Mob_Number, Gender, Occupation, ID_Type, ID_Number, Issued_Date, CAddress, Nationality, District) VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
     $stmt->bind_param("ssssssssssssss", $fullname, $fname, $lname, $bdate, $email, $mnumber, $ngender, $occupation, $nidtype, $idnumber, $isdate, $address, $nationality, $district);
     $stmt->execute();
     echo "Registration Successful.....";
